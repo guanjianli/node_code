@@ -1,0 +1,15 @@
+{
+  "name": "downpics",
+  "version": "1.0.0",
+  "description": "down a pic from sex.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liguanjian.com",
+  "license": "ISC",
+  "dependencies":{
+	"request":"",
+	"cheerio":""
+  }
+}
