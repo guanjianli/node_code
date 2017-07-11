@@ -18,7 +18,7 @@ exports.queryUser = function (obj, cb, reject) {
 }
 
 exports.insertMovie = (obj, cb) => {
-	var pObj = _.pick(obj, 'id', 'name', 'info', 'image');//筛选过键值后的Obj
+	var pObj = _.pick(obj, 'id', 'name', 'info', 'image', 'desc', 'star', 'date');//筛选过键值后的Obj
 	console.log(JSON.stringify(pObj))
 	db.execSqlOnce("replace into movie set ? ;" , pObj, (err, results, fields)=> {
 		if (err) {
